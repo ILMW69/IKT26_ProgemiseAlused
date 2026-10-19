@@ -10,9 +10,7 @@
             Console.WriteLine("Vali tehe: *, /, +, -");
             string input_tehe = Console.ReadLine();
 
-
             Console.WriteLine("sisesta teine number");
-
             float input2 = float.Parse(Console.ReadLine());
 
             switch (input_tehe)
@@ -22,6 +20,11 @@
                     break;
 
                 case "/":
+                    if (input2 == 0 || input1 == 0)
+                    {
+                        Console.WriteLine("nulliga ei saa jagada");
+                        break;
+                    }
                     Console.WriteLine($"vastus on {input1 / input2}");
                     break;
 
@@ -34,6 +37,7 @@
                     break;
 
                 default:
+                    Console.WriteLine("tehe puudub");
                     break;
             }
         }

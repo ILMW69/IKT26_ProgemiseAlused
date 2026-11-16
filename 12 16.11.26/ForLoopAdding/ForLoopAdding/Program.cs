@@ -22,7 +22,7 @@
                     Console.WriteLine("kill - koll");
                 }*/
 
-                Console.WriteLine("See on rida number " + i + (i <= kordus));
+                Console.WriteLine("See on rida number " + i);
 
                 for (int j = 0; j < 2; j++)
                 {

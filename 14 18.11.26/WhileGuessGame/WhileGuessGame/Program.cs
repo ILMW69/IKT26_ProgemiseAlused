@@ -10,7 +10,7 @@
             int secretNumber = random.Next(1, 101);
             int guess = int.Parse(Console.ReadLine());
             int attempts = 1;
-
+            
             while (secretNumber != guess)
             {
                 Console.WriteLine($"Vale arvamus, see on su proov nr. {attempts}");
